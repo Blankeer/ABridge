@@ -70,9 +70,9 @@ public class ABridgeService extends Service {
             client.mToken.unlinkToDeath(client, 0);
             Log.d(TAG, token + " left , client size " + mClients.size());
 
-            if (mClients.size() == 0) {
-                stopSelf();//没有客户端就停止自己
-            }
+            //if (mClients.size() == 0) {
+            //    stopSelf();//没有客户端就停止自己
+            //}
         }
 
         @Override
